@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-
+img{
+    height: 25px;
+}
 
 .wrapped{
     background-color: grey;
+    color: white;
     width: 100%;
     height: 100vh;
 }
@@ -26,7 +29,7 @@
 }
 
 .sidebar{
-    background-color: coral;
+    background-color: black;
     height: 100%;
     width: 50px;
 }
@@ -37,10 +40,44 @@
     width: 100%;
 }
 
+.menu{
+    padding: 15px 15px;
+}
+
+.menu-top{
+    display: flex;
+    flex-direction: column;
+    gap
+}
+
+header{
+   padding-bottom: 15px;
+}
+
+#logo img{
+    height: 35px;
+}
+
+#logo-sm{
+    display: none;
+}
+
+
+
 /*Media section*/
 
 @media screen and (min-width:490px){
     .sidebar{
         width:230px ;
+    }   
+}
+
+@media screen and (max-width:489px){
+    #logo-sm{
+        display: block;
+    }
+
+    #logo-lg{
+        display: none;
     }
 }
