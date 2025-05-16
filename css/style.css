@@ -190,10 +190,10 @@ main{
     ul{
         margin: 0 auto;
         display: flex;
-        flex: row;
         gap: 30px;
         text-transform: uppercase;
         font-weight: bolder;
+        flex-wrap: nowrap;
     }
 
 }
@@ -207,6 +207,10 @@ main{
     div#home{
     border-left: 1px solid lightgreen;
 }
+
+    .main-menu ul {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width:639px){
@@ -238,11 +242,17 @@ main{
         display: none;
     }
 
+    .main-menu ul {
+        flex-wrap: wrap;
+    }
     
 }
 
 @media screen and (min-width:878px){
 
+    .main-menu ul{
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width:1439px){
