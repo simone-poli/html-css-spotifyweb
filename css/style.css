@@ -4,10 +4,18 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 a{
     text-decoration: none;
-    color: white;
+    color: grey;
     font-size: 18px;
+}
+
+ul{
+    list-style: none;
 }
 
 img{
@@ -26,7 +34,7 @@ img{
     background-color: chartreuse;
     height: calc(100% - 70px);
     display: flex;
-    overflow-y:auto ;
+    overflow-y: auto;
 }
 
 
@@ -72,7 +80,35 @@ img{
     gap: 10px;
 }
 
+h4{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
 
+li{
+    padding: 15px 0;
+}
+
+.square{
+    height: 35px;
+    width: 35px;
+    background-color: grey;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-right: 5px;
+}
+
+.newplay span{
+    font-size: 18px;
+}
+
+.newplay{
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -109,6 +145,12 @@ img{
     a span{
         display: none;
     }
+
+    section#playlist{
+        display: none;
+    }
+
+    
 }
 
 @media screen and (min-width:878px){
