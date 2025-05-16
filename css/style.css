@@ -45,9 +45,12 @@ img{
 
 
 .upgradebar{
-    background-color: darkgreen;
+    background-color: #080b12;
     height: 90px;
     width: calc(100% - 50px);
+    position: sticky;
+    right: 0;
+    top: 0;
 }
 
 /*Sidebar section*/
@@ -59,8 +62,15 @@ img{
 
 .menu{
     padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+div.main-menu span,
+div #download span{
+    vertical-align: super;
+}
 .menu-top{
     display: flex;
     flex-direction: column;}
@@ -105,11 +115,51 @@ li{
     font-size: 18px;
 }
 
-.newplay{
+.newplay,
+div #profile{
     display: flex;
     align-items: center;
 }
 
+div#download{
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+}
+
+div#download img{
+    height: 25px;
+}
+
+div#profile{
+    padding: 15px 0;
+}
+
+.circle{
+    height: 35px;
+    width: 35px;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+/*Upgradebar section*/
+
+button{
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #080b12;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px;
+    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
 
 
 
