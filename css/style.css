@@ -48,6 +48,7 @@ img{
 
 
 /*Sidebar section*/
+
 .sidebar{
     background-color: black;
     height: 100%;
@@ -195,7 +196,35 @@ main{
         font-weight: bolder;
         flex-wrap: nowrap;
     }
+    .row{
+        display: flex;
+    }
 
+    .col-2{
+        width: calc(100%/12*2);
+        text-align: center;
+    }
+
+    img{
+        height: auto;
+    }
+
+    .card-albums{
+        padding: 0 1.5rem;
+    }
+
+    h1{
+        padding: 2rem 1rem ;
+    }
+
+    span{
+        color: grey;
+    }
+
+    h3{
+        padding: 10px 0;
+        font-size: 20px;
+    }
 }
 /*Media section*/
 
@@ -210,6 +239,14 @@ main{
 
     .main-menu ul {
         flex-wrap: wrap;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .col-md-3{
+        width: calc(100%/12*3);
     }
 }
 
@@ -246,6 +283,9 @@ main{
         flex-wrap: wrap;
     }
     
+    
+
+
 }
 
 @media screen and (min-width:878px){
@@ -253,6 +293,8 @@ main{
     .main-menu ul{
         flex-wrap: wrap;
     }
+
+    
 }
 
 @media screen and (min-width:1439px){
