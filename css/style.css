@@ -218,6 +218,7 @@ main{
     img{
         width: 100%;
         height: auto;
+       
     }
 
     .card-albums{
@@ -257,6 +258,22 @@ main{
     }
 }
 
+main img:hover{
+    opacity: 0.5;
+}
+
+.image-play i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    display: none;
+}
+
+.image-play i:hover {
+    display: block;
+}
 
 /*Bottom section*/
 
@@ -311,6 +328,12 @@ main{
 .fa-desktop{
     padding-right: 15px;
 }
+
+.image-play{
+    position: relative;
+    display: inline-block;
+}
+
 
 
 
