@@ -53,6 +53,7 @@ img{
     background-color: black;
     height: 100%;
     width: 50px;
+    overflow:hidden;
 }
 
 .menu{
@@ -215,6 +216,7 @@ main{
 
     h1{
         padding: 2rem 1rem ;
+        font-weight: 900;
     }
 
     span{
@@ -225,12 +227,37 @@ main{
         padding: 10px 0;
         font-size: 20px;
     }
+
+    #personal-create h1,
+    #popular-artist h1{
+        padding-bottom: 20px;
+    }
+
+    #personal-create h5,
+    #popular-artist h5{
+        padding-bottom: 3rem;
+        font-weight: bold;
+        font-size: 1rem;
+        padding-left: 1rem;
+        color: grey;
+    }
+
+    #popular-artist img{
+        border-radius: 50%;
+    }
 }
+
+
+/*Bottom section*/
+
+
+
 /*Media section*/
 
 @media screen and (min-width:640px){
     .sidebar{
         width:230px ;
+        height: 100%;
     }   
 
     div#home{
@@ -298,5 +325,5 @@ main{
 }
 
 @media screen and (min-width:1439px){
-
+    
 }
