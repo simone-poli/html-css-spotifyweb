@@ -487,13 +487,22 @@ main img:hover {
 
 }
 
+@media screen and (max-width:878px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .row .col-md-3 {
+        width: calc(100%/12*3);
+    }
+}
 
 @media screen and (max-width:624px) {
     .row {
         flex-wrap: wrap;
     }
 
-    .col-sm-6 {
+   .row .col-sm-6 {
         width: calc(100%/12*6);
     }
 
@@ -503,13 +512,3 @@ main img:hover {
 
 }
 
-
-@media screen and (max-width:878px) {
-    .row {
-        flex-wrap: wrap;
-    }
-
-    .col-md-3 {
-        width: calc(100%/12*3);
-    }
-}
